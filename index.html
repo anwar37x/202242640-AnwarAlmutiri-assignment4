@@ -1,9 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Anwar Almutairi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+
+<header>
+    <div class="container header-content">
+        <div>
+            <h1>Anwar Almutairi</h1>
+           <p class="tagline">Software Engineering Student</p>
+
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#Skills">skills</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.linkedin.com/in/anwar-almutairi-812b8b31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+        </nav>
+
+        <button id="themeToggle">☾</button>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container hero-content">
+        <h2>Designing clean, user-focused digital experiences.</h2>
+        <p>Passionate about UI design and practical software solutions.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+ I am a Software Engineering student focused on building efficient and structured software solutions.
+            My interests include user interface design, application development, and system organization.
+            I aim to create practical systems that improve usability and performance.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+         <div class="project-card">
+    <h3><i class="fa-brands fa-figma"></i> University Events Booking UI</h3>
+    <p>
+        Designed a full user interface in Figma for a university events platform 
+        where students can browse events and book seats easily.
+    </p>
+</div>
+
+<div class="project-card">
+    <h3><i class="fa-solid fa-location-dot"></i> Campus Navigation System</h3>
+    <p>
+        Developed a Visual Basic application where users enter a CRN 
+        to display building location and estimated walking time.
+    </p>
+</div>
+
+<div class="project-card">
+    <h3><i class="fa-solid fa-laptop-code"></i> Academic Tools Web Concept</h3>
+    <p>
+        Concept design for a structured academic support website 
+        focused on improving student accessibility and usability.
+    </p>
+</div>
+
+
+        </div>
+    </div>
+</section>
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript Basics</li>
+                    <li>Visual Basic (VB)</li>
+                    <li>Figma UI Design</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Critical Thinking</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+
+        <p class="contact-email">anwaralmutairi359@gmail.com</p>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Anwar Almutairi. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
+
+

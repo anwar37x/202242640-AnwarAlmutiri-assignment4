@@ -1,3 +1,165 @@
-body {
-  font-family: Arial;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #1e1e1e;
+    transition: 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #666;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+#hero {
+    background: linear-gradient(to right, #4f46e5, #6366f1);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+.contact-email {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #4f46e5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4338ca;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #f0f0f0;
+    font-size: 14px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #111827;
+    color: white;
+}
+
+.dark-mode header {
+    background: #1f2937;
+}
+
+.dark-mode .project-card {
+    background: #1f2937;
+}
+
+.dark-mode footer {
+    background: #1f2937;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.skill-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.skill-box ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.skill-box li {
+    margin-bottom: 8px;
+}
+
+.dark-mode .skill-box {
+    background: #1f2937;
+}
+
