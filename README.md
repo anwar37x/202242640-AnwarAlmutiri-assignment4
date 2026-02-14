@@ -12,12 +12,6 @@ It represents my profile as a Software Engineering student and showcases selecte
 - Skills section (Technical & Soft Skills)
 - Contact form with JavaScript interaction
 
-## Technologies Used
-- HTML5
-- CSS3 (Flexbox & Grid)
-- JavaScript
-- Font Awesome Icons
-
 ## How to Run
 1. Download or clone the repository.
 2. Open `index.html` in any modern browser.
@@ -33,6 +27,5 @@ AI tools (ChatGPT) were used to:
 
 Detailed explanation is provided in `docs/ai-usage-report.md`.
 
-## Author
-Anwar Almutairi  
-Software Engineering Student
+## Live Deployment (Optional)
+You can view the live project here: [Portfolio Live Demo](https://anwar37x.github.io/202242640-AnwarAlmutairi-assignment1/)
