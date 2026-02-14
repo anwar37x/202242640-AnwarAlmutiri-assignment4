@@ -27,5 +27,3 @@ AI tools (ChatGPT) were used to:
 
 Detailed explanation is provided in `docs/ai-usage-report.md`.
 
-## Live Deployment (Optional)
-You can view the live project here: [Portfolio Live Demo](https://anwar37x.github.io/202242640-AnwarAlmutairi-assignment1/)
