@@ -1,28 +1,34 @@
-# AI Integration Report
+# AI Usage Report
 
-## Tools Used & Use Cases
-- **ChatGPT**  
-  Used to clarify coding concepts, improve layout structure, suggest styling enhancements, and add interactivity features such as dark mode toggle and form alerts.
+## Tools Used
+- ChatGPT
 
-- **YouTube**  
-  Watched tutorials to understand HTML, CSS, and JavaScript implementation details, including responsive grid layouts and design best practices.
+## How AI Was Used
+ChatGPT was used to assist in improving the portfolio website for Assignment 2.  
+Specifically, it helped with:
 
-## Benefits & Challenges
-**Benefits:**  
-- Accelerated understanding of web development concepts.  
-- Helped implement JavaScript interactivity and design improvements efficiently.  
+- Improving JavaScript code for interactive features such as project filtering
+- Improving the dark mode functionality using localStorage
+- Adding form validation with user feedback messages
+- Enhancing UI/UX design with animations and better layout suggestions
 
-**Challenges:**  
-- Some suggestions required manual adaptation to match project requirements.  
-- Had to verify AI and tutorial guidance to ensure correctness and functionality.
+
+## Benefits
+- Helped speed up development and reduce errors
+- Provided clear explanations for implementing JavaScript features
+- Helped understand how to connect UI with functionality
+
+## Challenges
+- Some generated code needed adjustments to fit my project structure
+- Required testing and debugging to ensure everything works correctly
+- Needed to simplify some suggestions to match my level of understanding
 
 ## Learning Outcomes
-- Improved understanding of web development concepts and practical coding skills.  
-- Learned how to structure a responsive portfolio website effectively.  
-- Gained experience combining AI guidance with online tutorials for better workflow.
+- Learned how to implement dynamic content using JavaScript
+- Gained understanding of localStorage and how to store user preferences
+- Improved skills in form validation and user feedback
+- Better understanding of responsive design and UI improvements
 
-## Responsible Use & Modifications
-- Reviewed and modified all AI-generated suggestions to ensure correctness, originality, and academic integrity.  
-- Used AI and tutorials only as **supporting tools**, not as the final solution.  
-- Adapted examples from AI and YouTube to fit the project’s specific requirements.
-
+## Responsible Use
+All AI-generated code was carefully reviewed and modified.  
+I made sure I fully understood how each part works before using it.  
