@@ -1,40 +1,27 @@
 # Technical Documentation
 
 ## Project Overview
-This project is a responsive and interactive personal portfolio website developed as part of Assignment 2.  
-It builds on Assignment 1 by adding dynamic features, data handling, and improved user experience using JavaScript.
+
+This project is a front-end portfolio website enhanced with advanced functionality for Assignment 3.
+
+The system demonstrates:
+
+- External API integration
+- Complex JavaScript logic
+- State management
+- User feedback handling
+- Responsive design
 
 ---
 
-## System Architecture
+## File Structure
 
-The project follows a simple front-end architecture:
-
-- **HTML (index.html)** → Defines the structure of the website  
-- **CSS (styles.css)** → Handles styling, layout, and responsive design  
-- **JavaScript (script.js)** → Implements interactivity and dynamic behavior  
-
----
-
-## Features Implementation
-
-### 1. Dynamic Content (Project Filtering)
-A filtering feature was implemented to allow users to display projects based on category.
-
-- Each project card includes a `data-category` attribute
-- JavaScript dynamically shows or hides projects based on user selection
-- A message is displayed if no projects match the selected filter
-
-Example:
-```javascript
-function filterProjects(category) {
-    const projects = document.querySelectorAll(".project-card");
-
-    projects.forEach(project => {
-        if (category === "all" || project.dataset.category === category) {
-            project.style.display = "block";
-        } else {
-            project.style.display = "none";
-        }
-    });
-}
+```text
+assignment3/
+├── index.html
+├── css/styles.css
+├── js/script.js
+├── docs/
+│   ├── ai-usage-report.md
+│   └── technical-documentation.md
+└── README.md
