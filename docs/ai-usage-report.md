@@ -1,34 +1,77 @@
 # AI Usage Report
 
 ## Tools Used
+
 - ChatGPT
 
+---
+
 ## How AI Was Used
-ChatGPT was used to assist in improving the portfolio website for Assignment 2.  
-Specifically, it helped with:
 
-- Improving JavaScript code for interactive features such as project filtering
-- Improving the dark mode functionality using localStorage
-- Adding form validation with user feedback messages
-- Enhancing UI/UX design with animations and better layout suggestions
+AI tools were used during Assignment 3 to support development and learning.
 
+Main uses included:
+
+- Generating ideas for advanced portfolio features
+- Assisting with GitHub API integration
+- Improving JavaScript logic for filtering and sorting
+- Enhancing form validation
+- Suggesting UI/UX improvements
+- Reviewing CSS structure and responsiveness
+
+
+---
 
 ## Benefits
-- Helped speed up development and reduce errors
-- Provided clear explanations for implementing JavaScript features
-- Helped understand how to connect UI with functionality
+
+- Faster problem solving
+- Better understanding of JavaScript features
+- Improved code organization
+- Helped implement real-world API integration
+- Improved overall user experience
+
+---
 
 ## Challenges
-- Some generated code needed adjustments to fit my project structure
-- Required testing and debugging to ensure everything works correctly
-- Needed to simplify some suggestions to match my level of understanding
+
+- Some generated solutions required customization
+- Needed testing and debugging after implementation
+- Some suggestions were simplified to better fit project scope
+
+---
+
+## Risks of AI Usage
+
+- Incorrect code suggestions
+- Security/privacy risks if code is copied blindly
+
+To avoid these risks, all AI-generated output was reviewed manually.
+
+---
+
+## Example Prompts Used
+
+- Help me integrate GitHub API into my portfolio website
+- Improve JavaScript sorting and filtering logic
+- Suggest better UX for a student portfolio
+- Review my README documentation
+
+---
 
 ## Learning Outcomes
-- Learned how to implement dynamic content using JavaScript
-- Gained understanding of localStorage and how to store user preferences
-- Improved skills in form validation and user feedback
-- Better understanding of responsive design and UI improvements
+
+Through using AI tools, I learned:
+
+- How APIs work in front-end development
+- Better DOM manipulation in JavaScript
+- Data handling using localStorage
+- Better UI/UX thinking
+- How to improve documentation quality
+
+---
 
 ## Responsible Use
-All AI-generated code was carefully reviewed and modified.  
-I made sure I fully understood how each part works before using it.  
+
+All generated code was reviewed, edited, tested, and improved before submission.
+
+AI was used as a learning assistant and development support tool, not as a replacement for my own work.
