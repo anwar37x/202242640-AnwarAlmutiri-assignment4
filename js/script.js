@@ -1,76 +1,113 @@
-// Dark Mode + localStorage
+// Dark Mode
 const toggleBtn = document.getElementById("themeToggle");
 
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
+if(localStorage.getItem("theme")==="dark"){
+document.body.classList.add("dark-mode");
 }
 
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+toggleBtn.addEventListener("click",()=>{
+document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
+if(document.body.classList.contains("dark-mode")){
+localStorage.setItem("theme","dark");
+}else{
+localStorage.setItem("theme","light");
+}
 });
 
-// Form Validation
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
+// Contact Form
+const form=document.getElementById("contactForm");
+const msg=document.getElementById("formMessage");
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+form.addEventListener("submit",(e)=>{
+e.preventDefault();
 
-    const inputs = form.querySelectorAll("input, textarea");
-    let valid = true;
+const name=form.querySelector('input[type="text"]');
+const email=form.querySelector('input[type="email"]');
+const text=form.querySelector("textarea");
 
-    inputs.forEach(input => {
-        if (input.value.trim() === "") {
-            input.style.border = "2px solid red";
-            valid = false;
-        } else {
-            input.style.border = "1px solid #ddd";
-        }
-    });
+if(name.value.trim()==="" || email.value.trim()==="" || text.value.trim()===""){
+msg.textContent="Please fill all fields.";
+msg.style.color="red";
+return;
+}
 
-    if (!valid) {
-        message.textContent = "Please fill all fields.";
-        message.style.color = "red";
-        return;
-    }
+if(!email.value.includes("@") || !email.value.includes(".")){
+msg.textContent="Please enter valid email.";
+msg.style.color="red";
+return;
+}
 
-    message.textContent = "Message sent successfully!";
-    message.style.color = "green";
+msg.textContent="Message sent successfully!";
+msg.style.color="green";
 });
 
 // Filter Projects
-function filterProjects(category) {
-    const projects = document.querySelectorAll(".project-card");
-    const msg = document.getElementById("noResults");
+function filterProjects(category){
+const cards=document.querySelectorAll(".project-card[data-category]");
+const noResults=document.getElementById("noResults");
 
-    let visible = 0;
+let count=0;
 
-    projects.forEach(project => {
-        if (category === "all" || project.dataset.category === category) {
-            project.style.display = "block";
-            visible++;
-        } else {
-            project.style.display = "none";
-        }
-    });
+cards.forEach(card=>{
+if(category==="all" || card.dataset.category===category){
+card.style.display="block";
+count++;
+}else{
+card.style.display="none";
+}
+});
 
-    msg.style.display = visible === 0 ? "block" : "none";
+noResults.textContent = count===0 ? "No projects found." : "";
 }
 
 // Fade Animation
-const elements = document.querySelectorAll(".fade-in");
+const elements=document.querySelectorAll(".fade-in");
 
-window.addEventListener("scroll", () => {
-    elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            el.classList.add("show");
-        }
-    });
+window.addEventListener("scroll",()=>{
+elements.forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add("show");
+}
 });
+});
+
+// GitHub API
+let reposData=[];
+
+fetch("https://api.github.com/users/anwar37x/repos")
+.then(res=>res.json())
+.then(data=>{
+reposData=data;
+displayRepos(reposData);
+})
+.catch(()=>{
+document.getElementById("repoList").innerHTML=
+"<p>Unable to load repositories.</p>";
+});
+
+function displayRepos(repos){
+const repoList=document.getElementById("repoList");
+
+repoList.innerHTML="";
+
+repos.slice(0,6).forEach(repo=>{
+repoList.innerHTML += `
+<div class="project-card">
+<h3>${repo.name}</h3>
+<p>Updated: ${repo.updated_at.slice(0,10)}</p>
+<a href="${repo.html_url}" target="_blank">View Repository</a>
+</div>
+`;
+});
+}
+
+function sortReposAZ(){
+reposData.sort((a,b)=>a.name.localeCompare(b.name));
+displayRepos(reposData);
+}
+
+function sortReposZA(){
+reposData.sort((a,b)=>b.name.localeCompare(a.name));
+displayRepos(reposData);
+}

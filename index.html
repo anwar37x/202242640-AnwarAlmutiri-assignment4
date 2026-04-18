@@ -1,139 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Anwar Almutairi | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anwar Almutairi | Portfolio</title>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
 <header>
-    <div class="container header-content">
-        <div>
-            <h1>Anwar Almutairi</h1>
-            <p class="tagline">Software Engineering Student</p>
-        </div>
+<div class="container header-content">
+<div>
+<h1>Anwar Almutairi</h1>
+<p class="tagline">Software Engineering Student</p>
+</div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a href="https://www.linkedin.com/in/anwar-almutairi-812b8b31a" target="_blank">LinkedIn</a>
-        </nav>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#github">GitHub</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+<a href="https://www.linkedin.com/in/anwar-almutairi-812b8b31a" target="_blank">LinkedIn</a>
+</nav>
 
-        <button id="themeToggle">☾</button>
-    </div>
+<button id="themeToggle">☾</button>
+</div>
 </header>
 
 <section id="hero">
-    <div class="container hero-content">
-        <h2>Designing clean, user-focused digital experiences.</h2>
-        <p>Passionate about UI design and practical software solutions.</p>
-    </div>
+<div class="container hero-content">
+<h2>Designing clean, user-focused digital experiences.</h2>
+<p>Passionate about UI design and practical software solutions.</p>
+</div>
 </section>
 
 <section id="about" class="fade-in">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a Software Engineering student focused on building efficient and structured software solutions.
-            My interests include user interface design, application development, and system organization.
-        </p>
-    </div>
+<div class="container">
+<h2>About Me</h2>
+<p>
+I am a Software Engineering student focused on building efficient and structured software solutions.
+My interests include user interface design, application development, and system organization.
+</p>
+</div>
 </section>
 
 <section id="projects" class="fade-in">
-    <div class="container">
-        <h2>Projects</h2>
+<div class="container">
+<h2>Projects</h2>
 
-        <div style="margin-bottom:20px;">
-            <button onclick="filterProjects('all')">All</button>
-            <button onclick="filterProjects('ui')">UI</button>
-            <button onclick="filterProjects('vb')">VB</button>
-        </div>
+<div class="controls">
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('ui')">UI</button>
+<button onclick="filterProjects('vb')">VB</button>
+</div>
 
-        <p id="noResults" style="display:none; color:red;">No projects found</p>
+<p id="noResults"></p>
 
-        <div class="projects-grid">
+<div class="projects-grid">
 
-            <div class="project-card" data-category="ui">
-                <h3><i class="fa-brands fa-figma"></i> University Events Booking UI</h3>
-                <p>Designed a UI in Figma for a university event booking system.</p>
-            </div>
+<div class="project-card" data-category="ui">
+<h3><i class="fa-brands fa-figma"></i> University Events Booking UI</h3>
+<p>Designed a UI in Figma for a university event booking system.</p>
+</div>
 
-            <div class="project-card" data-category="vb">
-                <h3><i class="fa-solid fa-location-dot"></i> Campus Navigation System</h3>
-                <p>VB system that shows building location and time using CRN.</p>
-            </div>
+<div class="project-card" data-category="vb">
+<h3><i class="fa-solid fa-location-dot"></i> Campus Navigation System</h3>
+<p>VB system that shows building location and time using CRN.</p>
+</div>
 
-            <div class="project-card" data-category="web">
-                <h3><i class="fa-solid fa-laptop-code"></i> Academic Tools Web Concept</h3>
-                <p>Concept for improving academic usability and workflow.</p>
-            </div>
+<div class="project-card" data-category="web">
+<h3><i class="fa-solid fa-laptop-code"></i> Academic Tools Web Concept</h3>
+<p>Concept for improving academic usability and workflow.</p>
+</div>
 
-        </div>
-    </div>
+</div>
+</div>
+</section>
+
+<section id="github" class="fade-in">
+<div class="container">
+<h2>My GitHub Repositories</h2>
+
+<div class="controls">
+<button onclick="sortReposAZ()">Sort A-Z</button>
+<button onclick="sortReposZA()">Sort Z-A</button>
+</div>
+
+<div id="repoList" class="projects-grid">
+<p>Loading repositories...</p>
+</div>
+
+</div>
 </section>
 
 <section id="skills" class="fade-in">
-    <div class="container">
-        <h2>Skills</h2>
+<div class="container">
+<h2>Skills</h2>
 
-        <div class="skills-grid">
-            <div class="skill-box">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>Visual Basic</li>
-                    <li>Figma</li>
-                </ul>
-            </div>
+<div class="skills-grid">
 
-            <div class="skill-box">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Time Management</li>
-                    <li>Critical Thinking</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<div class="skill-box">
+<h3>Technical Skills</h3>
+<ul>
+<li>HTML & CSS</li>
+<li>JavaScript</li>
+<li>Visual Basic</li>
+<li>Figma</li>
+</ul>
+</div>
+
+<div class="skill-box">
+<h3>Soft Skills</h3>
+<ul>
+<li>Communication</li>
+<li>Teamwork</li>
+<li>Time Management</li>
+<li>Critical Thinking</li>
+</ul>
+</div>
+
+</div>
+</div>
 </section>
 
 <section id="contact" class="fade-in">
-    <div class="container">
-        <h2>Contact</h2>
+<div class="container">
+<h2>Contact</h2>
 
-        <p class="contact-email">anwaralmutairi359@gmail.com</p>
+<p class="contact-email">anwaralmutairi359@gmail.com</p>
 
-        <form id="contactForm">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+<form id="contactForm">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
 
-        <p id="formMessage"></p>
-    </div>
+<p id="formMessage"></p>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Anwar Almutairi</p>
+<p>© 2026 Anwar Almutairi</p>
 </footer>
 
 <script src="js/script.js"></script>
 </body>
 </html>
-
