@@ -90,9 +90,9 @@ This allows the portfolio to always display updated GitHub work automatically.
 
 | Technology | Purpose |
 |----------|---------|
-| HTML5 | Website structure |
-| CSS3 | Styling and responsive layout |
-| JavaScript ES6 | Logic and interactivity |
+| HTML | Website structure |
+| CSS| Styling and responsive layout |
+| JavaScript  | Logic and interactivity |
 | GitHub API | External data integration |
 | Font Awesome | Icons |
 | Google Fonts | Typography |
