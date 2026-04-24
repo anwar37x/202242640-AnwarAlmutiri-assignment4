@@ -14,6 +14,7 @@
 
 <header>
 <div class="container header-content">
+
 <div>
 <h1>Anwar Almutairi</h1>
 <p class="tagline">Software Engineering Student</p>
@@ -24,39 +25,61 @@
 <a href="#projects">Projects</a>
 <a href="#github">GitHub</a>
 <a href="#skills">Skills</a>
+<a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
 <a href="https://www.linkedin.com/in/anwar-almutairi-812b8b31a" target="_blank">LinkedIn</a>
 </nav>
 
 <button id="themeToggle">☾</button>
+
 </div>
 </header>
 
+<!-- HERO -->
 <section id="hero">
 <div class="container hero-content">
-<h2>Designing clean, user-focused digital experiences.</h2>
-<p>Passionate about UI design and practical software solutions.</p>
+
+<h2 id="typingText"></h2>
+
+<p>
+Passionate about UI design, front-end development, and practical software solutions.
+Explore my projects, skills, and live GitHub work below.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="hero-btn">View Projects</a>
+<a href="assets/images/Anwar_Almutairi_CV.pdf"download class="hero-btn secondary-btn">Download CV</a>
+</div>
+
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="fade-in">
 <div class="container">
+
 <h2>About Me</h2>
+
 <p>
 I am a Software Engineering student focused on building efficient and structured software solutions.
 My interests include user interface design, application development, and system organization.
+I aim to create practical systems that improve usability and performance.
 </p>
+
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="fade-in">
 <div class="container">
+
 <h2>Projects</h2>
 
 <div class="controls">
 <button onclick="filterProjects('all')">All</button>
 <button onclick="filterProjects('ui')">UI</button>
 <button onclick="filterProjects('vb')">VB</button>
+<button onclick="filterProjects('web')">Web</button>
 </div>
 
 <p id="noResults"></p>
@@ -65,25 +88,37 @@ My interests include user interface design, application development, and system 
 
 <div class="project-card" data-category="ui">
 <h3><i class="fa-brands fa-figma"></i> University Events Booking UI</h3>
-<p>Designed a UI in Figma for a university event booking system.</p>
+<p>
+Designed a complete user interface in Figma for a university events platform
+where students can browse and reserve seats easily.
+</p>
 </div>
 
 <div class="project-card" data-category="vb">
 <h3><i class="fa-solid fa-location-dot"></i> Campus Navigation System</h3>
-<p>VB system that shows building location and time using CRN.</p>
+<p>
+Developed a Visual Basic system that displays building locations
+and estimated time using CRN input.
+</p>
 </div>
 
 <div class="project-card" data-category="web">
 <h3><i class="fa-solid fa-laptop-code"></i> Academic Tools Web Concept</h3>
-<p>Concept for improving academic usability and workflow.</p>
+<p>
+Built a web concept focused on improving academic productivity,
+accessibility, and student workflow.
+</p>
 </div>
 
 </div>
+
 </div>
 </section>
 
+<!-- GITHUB -->
 <section id="github" class="fade-in">
 <div class="container">
+
 <h2>My GitHub Repositories</h2>
 
 <div class="controls">
@@ -98,8 +133,10 @@ My interests include user interface design, application development, and system 
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="fade-in">
 <div class="container">
+
 <h2>Skills</h2>
 
 <div class="skills-grid">
@@ -107,10 +144,12 @@ My interests include user interface design, application development, and system 
 <div class="skill-box">
 <h3>Technical Skills</h3>
 <ul>
-<li>HTML & CSS</li>
+<li>HTML5 & CSS3</li>
 <li>JavaScript</li>
+<li>Responsive Design</li>
 <li>Visual Basic</li>
-<li>Figma</li>
+<li>GitHub</li>
+<li>Figma UI Design</li>
 </ul>
 </div>
 
@@ -121,18 +160,59 @@ My interests include user interface design, application development, and system 
 <li>Teamwork</li>
 <li>Time Management</li>
 <li>Critical Thinking</li>
+<li>Problem Solving</li>
+<li>Adaptability</li>
 </ul>
 </div>
 
 </div>
+
 </div>
 </section>
 
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="fade-in">
+<div class="container">
+
+<h2>Achievements</h2>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+<h3>Academic Projects</h3>
+<p>
+Successfully completed multiple programming and web development projects.
+</p>
+</div>
+
+<div class="skill-box">
+<h3>Continuous Learning</h3>
+<p>
+Actively improving front-end development, UI/UX, and software engineering skills.
+</p>
+</div>
+
+<div class="skill-box">
+<h3>Professional Growth</h3>
+<p>
+Building a strong portfolio website to support future internship and career goals.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="fade-in">
 <div class="container">
+
 <h2>Contact</h2>
 
-<p class="contact-email">anwaralmutairi359@gmail.com</p>
+<p class="contact-email">
+anwaralmutairi359@gmail.com
+</p>
 
 <form id="contactForm">
 <input type="text" placeholder="Name">
@@ -146,8 +226,17 @@ My interests include user interface design, application development, and system 
 </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Anwar Almutairi</p>
+
+<p>© 2026 Anwar Almutairi | All Rights Reserved</p>
+
+<p>
+<a href="https://www.linkedin.com/in/anwar-almutairi-812b8b31a" target="_blank">LinkedIn</a> |
+<a href="https://github.com/anwar37x" target="_blank">GitHub</a> |
+<a href="mailto:anwaralmutairi359@gmail.com">Email</a>
+</p>
+
 </footer>
 
 <script src="js/script.js"></script>
