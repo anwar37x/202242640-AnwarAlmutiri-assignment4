@@ -1,14 +1,9 @@
 # 🌐 Personal Portfolio Website – Assignment 4
 
-<div align="center">
-
-### Final Professional Portfolio Project
-
-Designed and developed as part of the Web Development course to showcase my skills, projects, achievements, and technical growth as a Software Engineering student.
-
+A responsive portfolio website developed for the Web Development course to showcase my projects, skills, achievements, and live GitHub repositories.
 ---
 
-HTML5 • CSS3 • JavaScript • GitHub API • Responsive Design • UI/UX
+HTML • CSS • JavaScript • GitHub API • Responsive Design • UI/UX
 
 </div>
 
