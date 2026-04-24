@@ -1,9 +1,14 @@
 # 🌐 Personal Portfolio Website – Assignment 4
 
-A responsive portfolio website developed for the Web Development course to showcase my projects, skills, achievements, and live GitHub repositories.
----
+A responsive portfolio website developed for the Web Development course.
 
-HTML • CSS • JavaScript • GitHub API • Responsive Design • UI/UX
+It showcases my projects, skills, achievements, and live GitHub repositories.
+
+## Technologies
+
+HTML • CSS • JavaScript • GitHub API • Responsive Design
+
+---
 
 </div>
 
