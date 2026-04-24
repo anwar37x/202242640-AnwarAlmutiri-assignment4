@@ -4,17 +4,22 @@
 
 This project is a front-end personal portfolio website developed for Assignment 4.
 
-It includes advanced JavaScript features, responsive design, API integration, and user interaction enhancements.
+The website includes modern styling, JavaScript interactivity, responsive layouts, external API integration, and improved user experience features.
+
+It demonstrates practical front-end development skills through a real portfolio project.
 
 ---
 
 ## Main Objectives
 
+The project demonstrates:
+
 - External API integration
 - JavaScript interactivity
 - State management using localStorage
+- User feedback handling
 - Form validation
-- Responsive design
+- Responsive web design
 - Dynamic content rendering
 
 ---
@@ -36,64 +41,7 @@ assignment4/
 │   └── technical-documentation.md
 ├── .gitignore
 └── README.md
-Main Files
-index.html
 
-Contains:
 
-Navigation bar
-Hero section
-Projects
-Skills
-GitHub section
-Contact form
-Footer
-css/styles.css
 
-Responsible for:
 
-Layout
-Colors
-Typography
-Responsive design
-Dark mode
-Animations
-js/script.js
-
-Handles:
-
-Dark mode toggle
-localStorage
-Typing animation
-Form validation
-Project filtering
-GitHub API fetch
-Repository sorting
-Responsive Design
-
-Optimized for:
-
-Desktop
-Tablet
-Mobile
-
-Using:
-
-CSS Grid
-Flexbox
-Media Queries
-Error Handling
-
-Includes:
-
-Invalid email message
-Empty fields warning
-API loading error
-No projects found message
-Browser Compatibility
-
-Tested on:
-
-Google Chrome
-Microsoft Edge
-Firefox
