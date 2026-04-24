@@ -1,75 +1,164 @@
-# 🌐 Personal Portfolio – Assignment 4
+# 🌐 Personal Portfolio Website – Assignment 4
 
-> Final professional portfolio website showcasing my projects, skills, achievements, and live GitHub repositories.
+<div align="center">
 
----
+### Final Professional Portfolio Project
 
-## 🚀 Overview
-
-This project is the final enhanced version of my portfolio website developed for Assignment 4.
-
-It combines front-end development, responsive design, JavaScript interactivity, API integration, and polished UI/UX design.
+Designed and developed as part of the Web Development course to showcase my skills, projects, achievements, and technical growth as a Software Engineering student.
 
 ---
 
-## ✨ Features
+HTML5 • CSS3 • JavaScript • GitHub API • Responsive Design • UI/UX
 
-### 🎯 Sections
-- Hero
+</div>
+
+---
+
+# 📌 Table of Contents
+
+- Project Overview
+- Key Features
+- Technologies Used
+- Website Sections
+- Interactive Components
+- API Integration
+- Responsive Design
+- How to Run the Project
+- Live Deployment
+- AI Usage Summary
+- Future Improvements
+- Author
+
+---
+
+# 🚀 Project Overview
+
+This project represents the final version of my personal portfolio website developed for Assignment 4.
+
+The website was progressively improved through previous assignments and now includes a polished user interface, advanced JavaScript functionality, responsive layouts, real-world API integration, and enhanced user experience.
+
+The main purpose of this website is to present my academic profile, technical skills, completed projects, achievements, and GitHub work in a professional and organized format.
+
+---
+
+# ✨ Key Features
+
+## 🎯 Professional Portfolio Structure
+
+The website includes the following sections:
+
+- Hero Section
 - About Me
-- Projects
+- Projects Showcase
 - GitHub Repositories
 - Skills
 - Achievements
-- Contact
-
-### ⚡ Interactive Features
-- Dark Mode Toggle
-- Typing Animation
-- Project Filtering
-- Repository Sorting
-- Contact Form Validation
-- Smooth Scroll Effects
-- Fade-in Animations
-- Download CV Button
-
-### 🔗 API Integration
-Uses GitHub REST API to display live repositories.
+- Contact Form
 
 ---
 
-## 🛠 Technologies Used
+## ⚡ Interactive Features
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- GitHub API
-- Font Awesome
-- Google Fonts
+Implemented interactive features include:
 
----
-
-## 📱 Responsive Design
-
-Optimized for:
-
-- Desktop 💻
-- Tablet 📱
-- Mobile 📲
+- Dark / Light mode toggle
+- Typing text animation
+- Project filtering by category
+- GitHub repository sorting
+- Smooth scrolling navigation
+- Fade-in animations while scrolling
+- Contact form validation
+- Download CV button
 
 ---
 
-## ▶️ Run Locally
+## 🔗 API Integration
 
-1. Clone or download repository
-2. Open folder
-3. Launch `index.html`
+The website uses the GitHub REST API to dynamically fetch public repositories from my GitHub account.
+
+Displayed repository data includes:
+
+- Repository Name
+- Last Updated Date
+- Direct Repository Link
+
+This allows the portfolio to always display updated GitHub work automatically.
 
 ---
 
-## 🌍 Live Demo
+# 🛠 Technologies Used
 
-Hosted using GitHub Pages.
+| Technology | Purpose |
+|----------|---------|
+| HTML5 | Website structure |
+| CSS3 | Styling and responsive layout |
+| JavaScript ES6 | Logic and interactivity |
+| GitHub API | External data integration |
+| Font Awesome | Icons |
+| Google Fonts | Typography |
 
-```text
+---
 
+# 🧩 Website Sections
+
+## 🏠 Hero Section
+
+A modern landing section introducing the website with animated text and quick action buttons.
+
+## 👤 About Me
+
+A summary introducing my academic background and interests.
+
+## 💼 Projects
+
+A showcase of selected academic and technical projects.
+
+## 🐙 GitHub Section
+
+Live repositories loaded directly from GitHub.
+
+## 🧠 Skills
+
+Technical skills and soft skills presented in separate cards.
+
+## 🏆 Achievements
+
+Highlights of learning progress and completed milestones.
+
+## 📩 Contact
+
+Simple contact form with validation and user feedback.
+
+---
+
+# 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+
+- Desktop Devices 💻
+- Tablets 📱
+- Mobile Phones 📲
+
+Responsive techniques used:
+
+- CSS Grid
+- Flexible containers
+- Media queries
+- Mobile-friendly spacing
+
+---
+
+# ⚙️ How to Run the Project Locally
+
+## Method 1
+
+1. Download the repository ZIP file.
+2. Extract files.
+3. Open `index.html` in your browser.
+
+## Method 2
+
+1. Clone the repository:
+
+```bash
+git clone <repository-link>
