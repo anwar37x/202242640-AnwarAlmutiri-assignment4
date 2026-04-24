@@ -8,7 +8,6 @@ It showcases my projects, skills, achievements, and live GitHub repositories.
 
 HTML • CSS • JavaScript • GitHub API • Responsive Design
 
----
 
 </div>
 
