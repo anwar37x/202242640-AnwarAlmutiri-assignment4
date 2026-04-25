@@ -34,8 +34,10 @@ assignment4/
 ├── js/
 │   └── script.js
 ├── assets/
-│   ├── cv.pdf
+│   ├── Anwar_Almutairi_CV.pdf
+│   ├── Anwar Almutairi _ Portfolio.mp4
 │   └── images/
+│       └── .gitkeep
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
