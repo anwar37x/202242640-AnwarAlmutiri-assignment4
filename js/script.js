@@ -113,20 +113,55 @@ window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
 // ===============================
-// GITHUB API
+// GITHUB REPOSITORIES
 // ===============================
 let reposData = [];
 
-fetch("https://api.github.com/users/anwar37x/repos")
-    .then(response => response.json())
-    .then(data => {
-        reposData = data;
+async function loadRepos() {
+    const repoList = document.getElementById("repoList");
+
+    repoList.innerHTML = "<p>Loading repositories...</p>";
+
+    try {
+        const response = await fetch(
+            "https://api.github.com/users/anwar37x/repos?sort=updated&per_page=6"
+        );
+
+        const data = await response.json();
+
+        if (!Array.isArray(data)) {
+            throw new Error();
+        }
+
+        reposData = data.filter(repo => !repo.fork);
+
         displayRepos(reposData);
-    })
-    .catch(() => {
-        document.getElementById("repoList").innerHTML =
-            "<p>Unable to load repositories at this time.</p>";
-    });
+
+    } catch (error) {
+
+        reposData = [
+            {
+                name: "Assignment 4 Portfolio",
+                updated_at: "2026-04-25",
+                html_url: "https://github.com/anwar37x/202242640-AnwarAlmutiri-assignment4"
+            },
+            {
+                name: "Assignment 3 Portfolio",
+                updated_at: "2026-04-22",
+                html_url: "https://github.com/anwar37x/202242640--AnwarAlmutairi-assignment3"
+            },
+            {
+                name: "Assignment 2 Portfolio",
+                updated_at: "2026-04-18",
+                html_url: "https://github.com/anwar37x/202242640-anwaralmutairi-assignment2"
+            }
+        ];
+
+        displayRepos(reposData);
+    }
+}
+
+loadRepos();
 
 // ===============================
 // DISPLAY REPOSITORIES
@@ -136,16 +171,18 @@ function displayRepos(repos) {
 
     repoList.innerHTML = "";
 
-    repos.slice(0, 6).forEach(repo => {
-        repoList.innerHTML += `
-        <div class="project-card">
-            <h3>${repo.name}</h3>
-            <p>Updated: ${repo.updated_at.slice(0,10)}</p>
-            <a href="${repo.html_url}" target="_blank">
-                View Repository
-            </a>
-        </div>
-        `;
+    repos.forEach((repo, index) => {
+        setTimeout(() => {
+            repoList.innerHTML += `
+            <div class="project-card fade-in show">
+                <h3>${repo.name}</h3>
+                <p>Updated: ${repo.updated_at.slice(0,10)}</p>
+                <a href="${repo.html_url}" target="_blank">
+                    View Repository
+                </a>
+            </div>
+            `;
+        }, index * 250);
     });
 }
 
